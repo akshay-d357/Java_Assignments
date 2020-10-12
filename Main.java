@@ -1,27 +1,21 @@
-package Exception;
+import studpack.Student;
 
-
-class Item{
-	String member,name;
-	int cost;
-	Item(String member,String name,int cost)
-	{
-		this.member=member;
-		this.name=name;
-		this.cost=cost;
-	}
-
-	@Override
-	 public String toString() {
-	        return "["+member+"]"+"["+name+"]"+"["+cost+"]";
-	    }
-}
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Item i=new Item("Bag","Niky",1000);
-		System.out.println(i);
+		
+		
+			Student s=new Student();
+			
+			s.setName("Akshay");
+			s.setAddress("ichalkaranji");
+			s.setAge(23);
+			
+			System.out.println(s.getName());
+			System.out.println(s.getAddress());
+			System.out.println(s.getAge());
+
 	}
 
 }
